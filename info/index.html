@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>j's page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="for legal reasons, this page does not exist."
+    />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/tabs.js" async defer></script>
+    <script type="text/javascript" src="scripts/help.js" async defer></script>
+    <script type="text/javascript" src="scripts/exit.js" async defer></script>
+    <script type="text/javascript" src="scripts/time.js" async defer></script>
+    <style>
+      h1 {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="window" id="command-prompt" style="width: 800px">
+      <div class="title-bar">
+        <div class="title-bar-text">Command Prompt</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <pre style="height: 360px">Microsoft&lt;R&gt; Windows DOS &lt;C&gt; Copyright Microsoft Corp 1990-2001.<br>
+        C:\WINDOWS\SYSTEM32&gt; <span id="command-text">info --get fluidpup</span><br>
+        <span id="command-return">Retrieving info on @fluidpup...</span><br>
+        <span id="command-success">Info retrieved! Displaying now...</span></pre>
+      </div>
+    </div>
+
+    <div class="window" id="info">
+      <div class="title-bar">
+        <div class="title-bar-text">about @fluidpup</div>
+        <div class="title-bar-controls">
+          <button aria-label="Help" id="help-open"></button>
+          <button aria-label="Close" id="info-close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <menu role="tablist">
+          <button aria-selected="true" aria-controls="dni">dni</button>
+          <button aria-controls="about">about</button>
+          <button aria-controls="likes">likes</button>
+          <button aria-controls="dislikes">dislikes</button>
+          <button aria-controls="kinks">kinks</button>
+          <button aria-controls="limits">limits</button>
+          <button aria-controls="petnames">petnames</button>
+          <button aria-controls="favs">fav moots</button>
+        </menu>
+        <article role="tabpanel" id="dni">
+          <h1>do not interact if:</h1>
+          <ul>
+            <li>racist/sexist</li>
+            <li>homo/trans/bi/xeno phobic</li>
+            <li>ddlg/map/pear/whatever the fuck</li>
+            <li>tr*mp supporter</li>
+            <li>-15, +19</li>
+            <li>suspicious acct (no header/pfp, default username, etc)</li>
+          </ul>
+        </article>
+
+        <article role="tabpanel" hidden id="about">
+          <h1>about me:</h1>
+          <ul>
+            <li>my name is j</li>
+            <li>17</li>
+            <li>genderfluid (amab)</li>
+            <li>he/him + they/them + she/her (preferred pronouns will be in dn/bio)</li>
+            <li>unlabeled sexuality</li>
+            <li>vers puppy switch (sub+)</li>
+            <li>single, not looking</li>
+            <li>est (gmt-5:00) [see local time below]</li>
+            <li>send me cc's <a href="https://curiouscat.qa/fluidpup" target="_blank">here</a>!</li>
+          </ul>
+        </article>
+
+        <article role="tabpanel" hidden id="likes">
+          <h1>likes:</h1>
+          <ul>
+            <li>music (anything and everything)</li>
+            <li>video games (osu! + mc + others)</li>
+            <li>anime</li>
+            <li>cinematography</li>
+            <li>pc hardware/software</li>
+            <li>cybersecurity</li>
+            <li>philosophy</li>
+            <li>upsetting cishet vanilla gorillas</li>
+          </ul>
+        </article>
+
+        <article role="tabpanel" hidden id="dislikes">
+          <h1>dislikes:</h1>
+          <ul>
+            <li>dickheads</li>
+            <li>dry texters</li>
+            <li>country music</li>
+            <li>old white men</li>
+            <li>tomatoes, mushrooms, and olives</li>
+            <li>7k mania players</li>
+          </ul>
+        </article>
+
+        <article role="tabpanel" hidden id="kinks">
+          <h1>kinks:</h1>
+          <ul>
+            <li>forced orgasm + orgasm control/denial</li>
+            <li>bondage</li>
+            <li>petplay</li>
+            <li>a/b/o</li>
+            <li>collaring</li>
+            <li>cum play</li>
+            <li>pegging</li>
+            <li>breathplay/choking</li>
+            <li>praise/degradation</li>
+            <li>sadism/masochism</li>
+            <li>light knifeplay</li>
+            <li>begging</li>
+          </ul>
+        </article>
+
+        <article role="tabpanel" hidden id="limits">
+          <h1>limits:</h1>
+          <ul>
+            <li>scat</li>
+            <li>vomit</li>
+            <li>blood</li>
+            <li>gun play</li>
+            <li>cnc</li>
+            <li>any derivatives of the above</li>
+          </ul>
+        </article>
+
+        <article role="tabpanel" hidden id="petnames">
+          <h1>petnames (for ss):</h1>
+          <ul>
+            <li>puppy + derivatives</li>
+            <li>baby + derivatives</li>
+            <li>pretty boy/girl</li>
+            <li>pretty much anything :)</li>
+          </ul>
+          <br />
+          <h1>titles (for ds):</h1>
+          <ul>
+            <li>master</li>
+            <li>owner</li>
+            <li>daddy/mommy</li>
+            <li>also pretty much anything :D</li>
+          </ul>
+        </article>
+
+        <article role="tabpanel" hidden id="favs">
+          <h1>favorite moots:</h1>
+          <ul>
+            <li>bee (<a target="_blank" href="https://twitter.com/subbyb33">@subbyb33</a>)</li>
+            <li>blu (<a target="_blank" href="https://twitter.com/nbpuppy_">@nbpuppy_</a>)</li>
+            <li>nix (<a target="_blank" href="https://twitter.com/pervspet">@pervspet</a>)</li>
+            <li>ty (<a target="_blank" href="https://twitter.com/ecchislut">@ecchislut</a>)</li>
+            <li>teo (<a target="_blank" href="https://twitter.com/boyz4breakfast">@boyz4breakfast</a>)</li>
+            <li>lux (<a target="_blank" href="https://twitter.com/luxxieafterdark">@luxxieafterdark</a>)</li>
+            <li>renn (<a target="_blank" href="https://twitter.com/pupbwhy">@pupbwhy</a>)</li>
+            <li>si (keeps getting sussed)</li>
+          </ul>
+        </article>
+
+        <section class="field-row" style="justify-content: flex-end">
+          <button id="info-ok">OK</button>
+          <button>Cancel</button>
+        </section>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field" id="clock"></p>
+      </div>
+    </div>
+
+    <div class="window" style="width: 300px" hidden id="help">
+      <div class="title-bar">
+        <div class="title-bar-text">about this page</div>
+        <div class="title-bar-controls">
+          <button aria-label="Close" id="help-close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <p>&lt;/&gt; with ♡ by j</p>
+        <p>
+          styled using <a href="https://botoxparty.github.io/XP.css/" target="_blank">XP.css</a></p>
+        <p>
+          check out the source code on
+          <a href="https://github.com/urpuppysub/urpuppysub.github.io" target="_blank">GitHub</a></p>
+        <p>v7.0.0</p>
+      </div>
+    </div>
+  </body>
+</html>
