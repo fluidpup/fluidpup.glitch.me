@@ -1,3 +1,4 @@
+/* this first line contains jQuery code that tells the browser to run the following code only when the entire window and content have loaded. this prevents FOUC (flash of unstyled content) */
 $(window).on("load", () => {
   const text = "info --get fluidpup".split("");
   const command = document.querySelector("#command-text");
