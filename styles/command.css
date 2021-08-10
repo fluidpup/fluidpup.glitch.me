@@ -1,3 +1,4 @@
+/* this is a CSS animation. the syntax can get complicated, but in this instance, we just want the element with the id "caret" to blink every second forever */
 #caret {
   animation: caret 1s steps(1, end) infinite;
 }

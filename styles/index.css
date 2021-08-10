@@ -1,7 +1,9 @@
+/* CSS is usually pretty self explanatory. each "blocK" starts with a selector which tells us which element the style applies to. # indicates the id property which you can see in most of the <div> elements */
 body {
   background-color: silver;
 }
 
+/* z-index tells the browser the order to render content to the page. a higher z-index will move the element closer to the user—"out" of the screen. */
 #command-prompt {
   z-index: -10;
 }

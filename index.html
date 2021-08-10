@@ -1,20 +1,28 @@
+<!-- defines the document type to the browser (in this case, HTML5) -->
 <!DOCTYPE html>
 <html>
+  <!-- the <head> tag contains metadata for the page, i.e., the tab title, descriptions for SEO and links external files (in this case, CSS for styling, and JavaScript for interactivity). -->
   <head>
     <meta charset="utf-8" />
+    <!-- the title of the page. shows on the tab bar/window -->
     <title>j's page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- page description. shows up on search engine results -->
     <meta
       name="description"
       content="for legal reasons, this page does not exist."
     />
+    <!-- links to external styles. the first references XP.css, the framework that does most of the heavy lifting. the next two are stylesheets I created to modify the existing code. these are also located within the file tree -->
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/command.css" />
+    <!-- loads in external script files which run code to create interactivity. jQuery is a JavaScript framework that mainly serves to simplify repetitive tasks when working within browser-based JS. anim.js is the file that runs the animation for the page -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="scripts/anim.js" async defer></script>
   </head>
+  <!-- the <body> tag contains, well, the body of the document. this is where we store the things that the user can see -->
   <body>
+    <!-- <div> tags act like containers, storing content within it. in this case, the window is a <div>, the title bar is a <div>, and the body of the window is another <div> -->
     <div class="window" id="command-prompt" style="width: 800px">
       <div class="title-bar">
         <div class="title-bar-text">Command Prompt</div>
